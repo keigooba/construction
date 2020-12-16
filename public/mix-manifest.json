@@ -1,4 +1,19 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/bootstrap.min.js": "/js/bootstrap.min.js",
+    "/js/dataTables.bootstrap.js": "/js/dataTables.bootstrap.js",
+    "/js/dialog.js": "/js/dialog.js",
+    "/js/elfinder.min.js": "/js/elfinder.min.js",
+    "/js/jquery-ui.min.js": "/js/jquery-ui.min.js",
+    "/js/jquery.dataTables.js": "/js/jquery.dataTables.js",
+    "/js/jquery.hotkeys.js": "/js/jquery.hotkeys.js",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/jquery.ui.touch-punch.min.js": "/js/jquery.ui.touch-punch.min.js",
+    "/js/lodash.min.js": "/js/lodash.min.js",
+    "/js/metisMenu.min.js": "/js/metisMenu.min.js",
+    "/js/moment-with-locales.min.js": "/js/moment-with-locales.min.js",
+    "/js/script.js": "/js/script.js",
+    "/js/script_common.js": "/js/script_common.js",
+    "/js/spectrum.min.js": "/js/spectrum.min.js"
 }
