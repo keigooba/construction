@@ -1,0 +1,669 @@
+@CHARSET "UTF-8";
+
+/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ */
+	/** 蟾･遞玖｡ｨ逕ｻ髱｢蟆ら畑(蠢�★繧ｦ繧｣繝ｳ繝峨え縺ｮ鬮倥＆縺ｫ蜷医≧繧医≧縺ｫ隱ｿ謨ｴ) */
+	 .container-fluid {
+		position: absolute;
+		top: 60px;
+		left: 30px;
+		right: 30px;
+		bottom: 0;
+	}
+	@media (max-width: 767px) {
+		.container-fluid {
+		    top: 35px;
+		    left: 25px;
+		    right: 25px;
+		}
+	}
+	 .row,
+	 .row > .column,
+	 .row > .column > .panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.panel-body {
+		position: absolute;
+		top: 90px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+	}
+	@media (max-width: 767px) {
+		.panel-body {
+		    top: 65px;
+		    left: 10px;
+		    right: 10px;
+		    bottom: 10px;
+		}
+	}
+	.panel-body > .sch-table {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	/** 繝√ぉ繝�け繝懊ャ繧ｯ繧ｹ縺ｮ蛻�ｒ諡｡螟ｧ **/
+	#main-control{
+		padding-bottom: 35px;
+	}
+
+	/** 繝｢繝ｼ繝繝ｫ縺�1050縺ｮ縺溘ａ縺昴ｌ繧医ｊ螟ｧ縺阪￥ */
+	.ui-datepicker { z-index: 1100 !important; }
+
+	#pj-edit-modal .modal-dialog {
+		width: 100%;
+		max-width: 1050px;
+	}
+
+	.input-table.table>tbody>tr>td {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.input-table.table>tbody>tr>td .form-control {
+		border: 0;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	.input-table .sp-preview {
+		display: block;
+		width: 32px;
+		height: 16px;
+		margin: 0 10px;
+	}
+
+	/** 譯井ｻｶ蜷堺ｸ隕ｧ(髱櫁｡ｨ遉ｺ) **/
+	select[name='project'].project {
+		display: none;
+	}
+	input[name='project_name_word']{
+		max-width: 260px;
+	}
+
+	/** 譯井ｻｶ蜷阪が繝ｼ繝医さ繝ｳ繝励Μ繝ｼ繝� **/
+	ul.ui-autocomplete{
+		z-index: 2000;
+	}
+
+	/** 蜈･驥題｡ｨ遉ｺ驛ｨ蛻� */
+	.sch-money-data {
+		position: absolute;
+		overflow: hidden;
+	}
+	.sch-money-data .panel {
+		margin: 6px 3px;
+	}
+	.sch-money-data .table {
+		margin: 0;
+	}
+
+	.money-table-panel > .panel-body > .table > tbody > tr > td,
+	.money-table-panel > .panel-body > .table > thead > tr > th,
+	.money-table-panel > .panel-heading,
+	.money-table-panel > .panel-body{
+		padding: 4px;
+	}
+
+	/** 譛滄俣驕ｸ謚� */
+
+		/** 讓ｪ蟷�′蟆上＆縺上↑繧九→蟠ｩ繧後ｋ縺溘ａ縺ｮ蟇ｾ遲� */
+		.input-group-addon {
+		    width: auto; /** 繧ゅ→縺ｯ width: 1% */
+		}
+
+		/** 讓ｪ蟷�｢ｺ菫昴�縺溘ａ蟾ｦ蜿ｳ繧貞濠蛻�↓邵ｮ蟆� **/
+		.date-range .input-group-addon {
+			padding: 6px 6px;
+		}
+
+		/** 譛滄俣驕ｸ謚槭�譌･莉俶ｬ� */
+		.date-range.form-inline .input-group>.form-control.start-date,
+		.date-range.form-inline .input-group>.form-control.end-date {
+			width: 9.5em;
+		}
+
+	/** 縲瑚｡ｨ遉ｺ繧呈｡井ｻｶ縺ｮ蜈磯�ｭ縺ｫ蜷医ｏ縺帙ｋ縲阪メ繧ｧ繝�け繝懊ャ繧ｯ繧ｹ **/
+	.date-range.form-inline .input-group>.fit-pj-top {
+		line-height: 30px;
+		position: absolute;
+		left: 0px;
+		top: 35px;
+		margin: 0px;
+		font-weight: 400;
+	}
+	.date-range.form-inline .input-group .form-control.check-fit-pj-top {
+		margin-top: 0px;
+		margin-left: 0px;
+		position: initial;
+		vertical-align: middle;
+		width: initial;
+		height: 30px;
+		background-color: #f5f5f5;
+	}
+	.popover .date-range.form-inline .input-group .form-control.check-fit-pj-top {
+		background-color: white;
+	}
+	/** 繝昴ャ繝励が繝ｼ繝舌�縺ｮ鬮倥＆繧堤｢ｺ菫昴＠縲√°縺､譖ｴ譁ｰ繝懊ち繝ｳ縺ｨ驥阪↑繧峨↑縺�ｈ縺�↓縺吶ｋ **/
+	.date-range .menu_break{
+		display: none;
+	}
+	.popover .menu_break{
+		display: block;
+		height: 20px;
+	}
+
+
+	/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ陦ｨ */
+	.sch-table {
+		position: relative;
+		width: 100%;
+		overflow-y: scroll;
+		/* border: 1px solid black; */
+		font-size: 10px;
+		background: white;
+	}
+	/** 陦後�繝�ム (蟾ｦ蛛ｴ縺ｮ蝗ｺ螳夐Κ蛻�) */
+	.sch-row-header {
+		position: absolute;
+		left: 0;
+		overflow: hidden;
+		z-index: 2;
+		width: 147px;
+		border-right: 1px solid black;
+		background: white;
+	}
+	/** 陦後�繝�ム (蟾ｦ蛛ｴ縺ｮ蝗ｺ螳壹＠縺ｪ縺�Κ蛻�) */
+	.sch-row-sub-header {
+		position: absolute;
+		top: 0;
+		left: 145px;
+		width: 240px;
+		background: white;
+	}
+
+	/** 陦梧悽菴�(蜿ｳ蛛ｴ縺ｮ蜿ｯ蜍暮Κ蛻�) */
+	.sch-row-body {
+		position: absolute;
+		top: 0;
+		left: 386px; /* PG縺ｧ螟画峩蠢�ｦ� */
+		width: 2000px; /* PG縺ｧ螟画峩蠢�ｦ� */
+		overflow: hidden;
+	}
+	.sch-row-body .sch-cell {
+		border: 1px solid #f6f6f6;
+	}
+
+	/** 蛻励�繝�ム (荳雁�縺ｮ蝗ｺ螳夐Κ蛻�) */
+	.sch-column-header {
+		position: absolute;
+		z-index: 1;
+		background: white;
+		border-bottom: 2px solid black;
+	}
+
+	/** 蛻励ヵ繝�ち繝ｼ */
+	.sch-column-footer {
+		border-top: 2px solid black;
+	}
+	.sch-row-body .sch-column-footer {
+		border-left: 1px solid black;
+	}
+
+	/** 蛻励ヵ繝�ち繝ｼ蜀��陦後√そ繝ｫ (蛻励ヵ繝�ち繝ｼ縺ｯJavaScript縺ｧheight繧定ｨｭ螳壹＠縺ｾ縺�) */
+	.sch-column-footer .sch-row,
+	.sch-column-footer .sch-row .sch-cell {
+		height: 100%;
+	}
+
+	.sch-column-data{
+		word-break: break-all;
+	}
+
+	/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ陦� */
+	.sch-row {
+		background: white;
+	}
+	.sch-row::after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+
+	/** 繧ｵ繝悶Λ繧､繝ｳ1 */
+	.sch-row.sub1 {
+		position: relative;
+	}
+	.sch-row.sub1 .sch-cell {
+		border-top: 1px solid black;
+	}
+
+	/** 繧ｵ繝悶Λ繧､繝ｳ2 */
+	.sch-row.sub2 {
+		position: relative;
+	}
+
+	/** 繝｡繧､繝ｳ繝ｩ繧､繝ｳ */
+	.sch-row.main {
+		position: relative;
+	}
+
+	/** 繝｡繧､繝ｳ繝ｩ繧､繝ｳ繧ｻ繝ｫ */
+	.sch-row.main .sch-cell {
+		height: 38px;
+		/*line-height: 38px;*/
+	}
+	.sch-row.head .sch-cell {
+		text-align: center;
+	}
+
+	/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ繧ｻ繝ｫ */
+	.sch-cell {
+		float: left;
+		padding: 1px;
+		border: 1px solid #f6f6f6;
+		height: 19px;
+		width: 50px;
+		margin-bottom: -1px;
+	}
+
+	/** 譌･縺ｫ縺｡繧ｻ繝ｫ */
+	.sch-cell.day {
+		width: 14px;
+		text-align: center;
+	}
+	/** 1譌･逶ｮ (譌･縺ｫ縺｡繧ｻ繝ｫ縲∵怦繧ｻ繝ｫ) */
+	.sch-row-body .sch-cell:first-child,
+	.sch-cell.d01 {
+		border-left: 1px solid black;
+	}
+
+	/** 蝨滓屆譌･ */
+	.sch-cell.sat {
+		color: blue;
+	}
+	/** 譌･譖懈律 */
+	.sch-cell.sun {
+		color: red;
+		background: yellow;
+	}
+
+	/** 譛医そ繝ｫ */
+	.sch-cell.month {
+		width: 14px;
+		text-align: center;
+		font-size: 11px;
+		color: black;
+		background: white;
+	}
+	.sch-cell.month.d01 {
+		position: relative;
+	}
+	.sch-cell.month.d01 .inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		padding-top: 2px;
+		width: 30px;
+		background: white;
+	}
+
+
+	/** PJ逡ｪ蜿ｷ */
+	.sch-cell.pj-no {
+		width: 25px;
+		border-right: 1px solid black;
+		text-align: center;
+		/* background: rgb(75, 172, 198); */
+	}
+	.sch-column-data .sch-cell.pj-no {
+		font-size: 120%;
+	}
+
+	/** 鬆�ｺ丞､画峩  */
+	/*
+	.sch-cell.pj-no.pj-up,
+	.sch-cell.pj-no.pj-down {
+		font-size: 13px;
+		cursor: pointer;
+	}
+	.sch-cell.pj-no.pj-up:hover,
+	.sch-cell.pj-no.pj-down:hover {
+		color: #337ab7;
+	}
+	*/
+	/** 鬆�ｺ丞､画峩 - 荳顔泙蜊ｰ */
+	/*
+	.sch-cell.pj-no.pj-up::before {
+		font-family: FontAwesome;
+		content: "\f077";
+	}
+	*/
+	/** 鬆�ｺ丞､画峩 - 荳狗泙蜊ｰ */
+	/*
+	.sch-cell.pj-no.pj-down::before {
+		font-family: FontAwesome;
+		content: "\f078";
+	}
+	*/
+	.sch-cell.pj-no.pj-edit {
+		font-size: 10px;
+		cursor: pointer;
+		color: #337ab7;
+		text-decoration: underline;
+	}
+
+	/** 驍ｸ蜷� */
+	.sch-cell.pj-name {
+		width: 120px;
+		border-left: none;
+		border-right: 1px solid black;
+	}
+	.sch-column-data .sch-cell.pj-name.main {
+        display: flex;
+		line-height: 1;
+		font-size: 120%;
+	}
+	_:-ms-lang(x)::-ms-backdrop, .sch-column-data .sch-cell.pj-name.main {
+        display: table;
+	}
+
+	.sch-column-data .sch-cell.pj-name.main .inner {
+        flex: 0 1 auto;
+        margin: auto 0;
+	}
+	_:-ms-lang(x)::-ms-backdrop, .sch-column-data .sch-cell.pj-name.main .inner {
+        display: table-cell;
+        vertical-align: middle;
+	}
+
+	/** 驍ｸ蜷阪�繧ｻ繝ｫ髢薙�繝ｼ繝繝ｼ豸亥悉 */
+	.sch-cell.pj-name.sub{
+		border-bottom: none;
+	}
+
+	.sch-cell.pj-name.main{
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.sch-cell.pj-name.date{
+		border-top: none;
+	}
+
+	/** 蝟ｶ讌ｭ */
+	.sch-cell.sales-staff {
+		width: 40px;
+		border-right: 1px solid black;
+	}
+	/** 險ｭ險� */
+	.sch-cell.designer {
+		width: 40px;
+		border-right: 1px solid black;
+	}
+	/** 蟾･莠� */
+	.sch-cell.constructor {
+		width: 40px;
+		border-right: 1px solid black;
+	}
+	/** 讌ｭ閠� */
+	.sch-cell.trader {
+		width: 40px;
+		border-right: 1px solid black;
+	}
+	/** 螂醍ｴ� */
+	.sch-cell.contract {
+		width: 80px;
+		text-align: right;
+	}
+	/** 陬懆ｶｳ */
+	.sch-cell.contract.memo {
+		text-align: left;
+	}
+
+	/** 荳贋ｸ倶ｸｭ螟ｮ逕ｨ */
+	.sch-column-data .sch-cell.has-inner {
+        display: flex;
+		line-height: 1;
+	}
+	_:-ms-lang(x)::-ms-backdrop, .sch-column-data .sch-cell.has-inner {
+        display: table;
+	}
+
+	.sch-column-data .sch-cell .inner {
+        flex: 0 1 auto;
+        margin: auto 0;
+	}
+	_:-ms-lang(x)::-ms-backdrop, .sch-column-data .sch-cell .inner {
+        display: table-cell;
+        vertical-align: middle;
+	}
+    /** PJ逡ｪ蜿ｷ縺ｮ縺ｿ蟾ｦ蜿ｳ荳ｭ螟ｮ **/
+    .sch-column-data .sch-cell.pj-no .inner {
+        margin: auto;
+    }
+
+	/** 繧ｬ繝ｳ繝医メ繝｣繝ｼ繝医�繝舌� */
+		.sch-bar {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin-left: 1px;
+			cursor: pointer;
+		}
+
+		/** 繝｡繧､繝ｳ繝�く繧ｹ繝� */
+		.sch-bar-text.main {
+			position: absolute;
+			display: table;
+			width: 100%;
+			height: 100%;
+			font-size: 10px;
+			white-space: nowrap;
+		}
+		.sch-bar-text.main .inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		/** 髢句ｧ倶ｽ咲ｽｮ繝�く繧ｹ繝� */
+		.sch-bar-text.start {
+			position: absolute;
+			top: 5px;
+			left: 0;
+		}
+		/** 邨ゆｺ�ｽ咲ｽｮ繝�く繧ｹ繝� */
+		.sch-bar-text.end {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.sch-bar-text.start,
+		.sch-bar-text.end {
+			font-size: 9px;
+		}
+		.sch-bar-text.sub-text{
+			white-space: nowrap;
+		}
+
+		/** 繧ｰ繝ｩ繝輔ラ繝ｩ繝�げ **/
+		.ui-resizable-w{
+			width: 5px;
+			left: 0px;
+		}
+		.ui-resizable-e {
+			width: 5px;
+			right: 0px;
+		}
+
+		/** 繧ｰ繝ｩ繝墓桃菴懈凾 **/
+		.sch-bar:hover, .ui-draggable-dragging, .ui-resizable-resizing{
+			outline: solid 1px #66afe9;
+			outline-offset: 1px;
+		}
+		.sch-bar:hover{
+			z-index: 1;
+		}
+
+
+/** 繝繧､繧｢繝ｭ繧ｰ */
+
+	/** 譯井ｻｶ邱ｨ髮� */
+	#pj-edit-modal .modal-body {
+		padding: 15px;
+	}
+
+	#pj-edit-modal .modal-body .tab-pane {
+		padding-top: 15px;
+	}
+
+	.order_target_radio{
+		min-width: 6em;
+	}
+
+	/** 諡�ｽ薙Λ繝吶Ν蜿ｳ謠�∴ */
+	#pj-edit-modal .col_staff{
+		width: inherit;
+	}
+	#pj-edit-modal .col_staff div.input-group{
+		margin-left: auto;
+	}
+
+	/** 驥鷹｡榊粋險� */
+	tfoot.total-income{
+		text-align: right;
+	}
+	tfoot.total-income td.total-income-title{
+		font-weight: bold;
+	}
+	tfoot.total-income td.total-income-text{
+		padding-right: 12px;
+		font-size: 14px;
+		text-align: right;
+	}
+
+	#tab1 .sp-preview{
+		height: 16px;
+		min-width: 30px;
+	}
+
+	.tei-group{
+		width: 100%;
+	}
+
+	.tei-group .input-group-addon{
+		width: 30px;
+	}
+
+	input.input_number{
+		text-align: right;
+	}
+
+	#nensyo-form-group input{
+		height: 30px;
+		margin-top: 0px;
+		vertical-align: middle;
+	}
+
+	#nensyo-form-group .checkbox{
+		padding-top: 0px;
+	}
+
+	#nensyo-form-group .nensyo-label{
+		line-height: 30px;
+	}
+
+	#no_first_color_area{
+		float: right;
+		padding-left: 12px;
+		border: 1px solid #ccc;
+ 		border-radius: 4px;
+	}
+
+/** 邵ｦ譖ｸ縺� */
+	.vertical {
+		-ms-writing-mode: tb-rl;
+		writing-mode: tb-rl;
+		-webkit-writing-mode: vertical-rl;
+	}
+
+	/** 邵ｦ譖ｸ縺� (writing-mode縺御ｸ頑焔縺剰｡後°縺ｪ縺�ヶ繝ｩ繧ｦ繧ｶ逕ｨ) */
+	.vertical-fallback .vertical .inner {
+		/** width縺敬eight縺ｫ, height縺詣idth縺ｫ縺ｪ繧九◆繧√し繧､繧ｺ謖�ｮ壹′蠢�ｦ√〒縺吶� */
+		width: 60px;
+		height: 200px;
+
+		cursor: vertical-text;
+		padding: 0.1em;
+		position: absolute;
+		left: 100%;
+		-ms-transform-origin: top left;
+		-moz-transform-origin: top left;
+		-webkit-transform-origin: top left;
+		-ms-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+	.vertical-fallback .vertical .inner .char {
+		display: inline-block; /* transform繧呈怏蜉ｹ縺ｫ縺吶ｋ縺溘ａinline繧段nline-block縺ｫ縺励∪縺� */
+	}
+
+	/* 騾壼ｸｸ譁�ｭ�  竊� 譁�ｭ怜腰菴阪〒騾�屓霆｢縺励※蜈�↓謌ｻ縺励∪縺� */
+	.vertical-fallback .vertical .inner .char.normal {
+		-ms-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+	}
+	/* 迚ｹ谿翫↑譁�ｭ�(髟ｷ髻ｳ縲∫ｴ�黄) 竊� 蝗櫁ｻ｢縺輔○縺ｪ縺�ｈ縺�↓縺励∪縺� */
+	.vertical-fallback .vertical .inner .char.special {
+		position: relative;
+		top: 1px;
+		left: 1px;
+	}
+	/* 迚ｹ谿翫↑譁�ｭ�(蜿･隱ｭ轤ｹ) 竊� 繧ゅ≧蜊雁屓霆｢縺励∪縺� */
+	.vertical-fallback .vertical .inner .char.punctuation {
+		position: relative;
+		left: 5px;
+		-ms-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+/** 譌･莉伜�騾� */
+.hasDatepicker, .sch-cell.month.d01 .inner, .sch-money-data .date, .popover .date{
+	letter-spacing: 2px;
+}
+/** 譯井ｻｶ邱ｨ髮� 譌･莉伜ｹ�ｸｮ蟆� **/
+td .hasDatepicker{
+	padding: 6px 3px;
+	letter-spacing: 1.5px;
+}
+
+/** 繝｡繝九Η繝ｼ繝懊ち繝ｳ */
+.menu-button{
+	display: none;
+}
+@media (max-width: 1200px) {
+	.menu-button{
+		display: inline;
+	}
+
+	.panel-heading .date-range{
+		display: none;
+	}
+}
+
+.popover .form-inline > *{
+	margin: 3px 0px;
+}
+
+/* 譛亥錐 */
+.month_label{
+	cursor: pointer;
+}

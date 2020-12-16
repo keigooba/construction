@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+/** 2��3繝ｶ譛亥� **/
+
+.money-table-panel > .panel-body > .table > tbody > tr > td,
+.money-table-panel > .panel-body > .table > thead > tr > th,
+.money-table-panel > .panel-heading,
+.money-table-panel > .panel-body{
+	padding: 4px;
+}
+
+/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ陦ｨ */
+.sch-table {
+	font-size: 12px;
+}
+
+/** 陦後�繝�ム (蟾ｦ蛛ｴ縺ｮ蝗ｺ螳夐Κ蛻�) */
+.sch-row-header {
+	width: 155px;
+}
+/** 陦後�繝�ム (蟾ｦ蛛ｴ縺ｮ蝗ｺ螳壹＠縺ｪ縺�Κ蛻�) */
+.sch-row-sub-header {
+	left: 155px;
+	width: 270px;
+}
+
+/** 陦梧悽菴�(蜿ｳ蛛ｴ縺ｮ蜿ｯ蜍暮Κ蛻�) */
+.sch-row-body {
+	left: 425px; /* PG縺ｧ螟画峩蠢�ｦ� */
+}
+
+/** 繝｡繧､繝ｳ繝ｩ繧､繝ｳ繧ｻ繝ｫ */
+.sch-row.main .sch-cell/*:not(.has-inner)*/ {
+	height: 52px;
+	/*line-height: 38px;*/
+}
+
+/** 繧ｹ繧ｱ繧ｸ繝･繝ｼ繝ｫ繧ｻ繝ｫ */
+.sch-cell {
+	padding: 1px;
+	height: 26px;
+}
+
+/** 譌･縺ｫ縺｡繧ｻ繝ｫ */
+.sch-cell.day {
+	width: 14px;
+	font-size: 10px;
+}
+
+/** 譛医そ繝ｫ */
+.sch-cell.month {
+	width: 14px;
+	font-size: 12px;
+}
+.sch-cell.month.d01 .inner {
+	padding-top: 2px;
+}
+
+/** PJ逡ｪ蜿ｷ */
+.sch-cell.pj-no {
+	width: 28px;
+}
+
+.sch-cell.pj-no.pj-edit {
+	font-size: 12px;
+}
+
+/** 驍ｸ蜷� */
+.sch-cell.pj-name {
+	width: 125px;
+}
+
+/** 蝟ｶ讌ｭ */
+.sch-cell.sales-staff {
+	width: 45px;
+}
+/** 險ｭ險� */
+.sch-cell.designer {
+	width: 45px;
+}
+/** 蟾･莠� */
+.sch-cell.constructor {
+	width: 45px;
+}
+/** 讌ｭ閠� */
+.sch-cell.trader {
+	width: 45px;
+}
+/** 螂醍ｴ� */
+.sch-cell.contract {
+	width: 90px;
+}
+
+/** 繧ｬ繝ｳ繝医メ繝｣繝ｼ繝医�繝舌� */
+/** 繝｡繧､繝ｳ繝�く繧ｹ繝� */
+.sch-bar-text.main {
+	font-size: 15px;
+}
+/** 髢句ｧ九�邨ゆｺ�ｽ咲ｽｮ繝�く繧ｹ繝� */
+.sch-bar-text.start,
+.sch-bar-text.end {
+	font-size: 14px;
+}

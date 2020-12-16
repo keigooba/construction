@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+/* トップページ モーダル*/
+/* input部分 */
+.input-group-addon {
+  padding: 2px 12px !important;
+}
+/* 削除ボタン */
+.dislog_close {
+  position: absolute;
+  right: 2%;
+  top: 5px;
+}
+/* カラーピッカー */
+.preview_picker {
+  display: none;
+}
+/* 開始日 */
+.dialog_column {
+  width: 20%;
+}
+/* 項目 */
+.sch-column-data {
+  margin-top: 75px !important;
+}
