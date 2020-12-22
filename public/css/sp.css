@@ -23,3 +23,14 @@
 .sch-column-data {
   margin-top: 75px !important;
 }
+/* モーダル */
+.modal_open {
+  opacity: 1;
+  padding-right: 0px;
+  display: block;
+  background: rgba(0,0,0,0.5);
+}
+/* ボタン・入金表示 高さ */
+.height_adjust {
+  margin-bottom: 13px;
+}

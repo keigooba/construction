@@ -1224,9 +1224,15 @@ jQuery(function($){
 	$(".start-date").val(start.format("YYYY/MM/DD"));
 	$(".end-date").val(end.format("YYYY/MM/DD"));
 
-	// 譯井ｻｶ菴懈�繝懊ち繝ｳ
+	// モーダルを開く
 	$(document).on("click", ".pj-new-button", function(){
-		common.dialog.pjEditModal();
+    // alert('アラーートだよ');
+		$("#pj-edit-modal").addClass("modal_open");
+  });
+
+  // モーダルを閉じる
+	$(document).on("click", ".dislog_close", function(){
+		$("#pj-edit-modal").removeClass("modal_open");
 	});
 
 	// 蜊ｰ蛻ｷ

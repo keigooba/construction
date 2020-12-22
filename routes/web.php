@@ -15,8 +15,15 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'Auth\LoginController@showLoginForm');
+Route::get('/', 'MatterController@index');
+
+Route::get('/matter', 'MatterController@index')->name('matter');
+Route::post('/matter', 'MatterController@post');
+
+// 日付変更
+Route::post('/matter/date', 'MatterController@date');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home', 'HomeController@date');
