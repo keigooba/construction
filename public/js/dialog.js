@@ -18,7 +18,7 @@
 								<button type="button" class="close dislog_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 								<div class="modal-title" data-msgname="dialog_confirm_title">案件編集</div>\
               </div>\
-              <form class="form-horizontal">\
+              <form action="/matter" method="post" class="form-horizontal">\
 							<div class="modal-body">\
 								<div class="modal-error-msg-area">\
 								</div>\
@@ -31,7 +31,7 @@
                       <label for="pj-name" class="control-label column col-sm-3 required">邸名</label>\
                       <div class="column col-sm-9">\
                         <div class="input-group tei-group">\
-                          <input type="text" class="form-control" id="pj-name" name="pj_name" value="" placeholder="邸名 (例: コスモホーム邸)">\
+                          <input type="text" class="form-control" id="pj-name" name="name" value="" placeholder="邸名 (例: コスモホーム邸)">\
                           <label class="control-label input-group-addon preview_picker">\
                             <input class="color-preview" type="text" id="pj_color" name="pj_color" />\
                           </label>\
@@ -41,13 +41,13 @@
                     <div class="form-group">\
                       <label for="pj-name-sub" class="control-label column col-sm-3">補足情報</label>\
                       <div class="column col-sm-9">\
-                        <input type="text" class="form-control" id="pj-name-sub" name="pj_name_sub" value="" placeholder="建築場所 (例: ◯◯市　2階建)">\
+                        <input type="text" class="form-control" id="pj-name-sub" name="sub" value="" placeholder="建築場所 (例: ◯◯市　2階建)">\
                       </div>\
                     </div>\
                     <div class="form-group">\
                       <label for="pj-name-sub2" class="control-label column col-sm-3">補足情報2</label>\
                       <div class="column col-sm-9">\
-                        <input type="text" class="form-control" id="pj-name-sub2" name="pj_name_sub2" value="" placeholder="補足情報2">\
+                        <input type="text" class="form-control" id="pj-name-sub2" name="sub2" value="" placeholder="補足情報2">\
                       </div>\
                     </div>\
                     <div class="form-group">\
@@ -55,7 +55,7 @@
                       <div class="column col-sm-9 col_staff">\
                         <div class="input-group">\
                           <label for="sales-staff" class="control-label input-group-addon">営業</label>\
-                          <input type="text" class="form-control" id="sales-staff" name="sales_staff" value="" placeholder="営業 (例: 山田)">\
+                          <input type="text" class="form-control" id="sales-staff" name="sales" value="" placeholder="営業 (例: 山田)">\
                           <label class="control-label input-group-addon preview_picker">\
                             <input class="color-preview" type="text" id="sales_staff_color" name="sales_staff_color" />\
                           </label>\
@@ -92,7 +92,7 @@
                     <div class="form-group">\
                       <label for="base-date" class="control-label column col-sm-3 required">開始日</label>\
                       <div class="column col-sm-9">\
-                        <input type="date" class="form-control dialog_column" id="base-date" name="base_date" value="" placeholder="開始日 (例: 2015/01/01)">\
+                        <input type="date" class="form-control dialog_column" id="base-date" name="date" value="" placeholder="開始日 (例: 2015/01/01)">\
                       </div>\
                     </div>\
                     <div class="form-group">\
@@ -261,7 +261,7 @@
 								</div>\
 							</div>\
 							<div class="modal-footer">\
-								<button type="button" class="btn btn-primary pj-save-button">保存</button>\
+								<button type="submit" class="btn btn-primary pj-save-button">保存</button>\
 								<button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>\
               </div>\
               </form>\
