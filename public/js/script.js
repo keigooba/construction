@@ -1221,8 +1221,8 @@ jQuery(function($){
 		});
 	};
 
-	$(".start-date").val(start.format("YYYY/MM/DD"));
-	$(".end-date").val(end.format("YYYY/MM/DD"));
+	// $(".start-date").val(start.format("YYYY/MM/DD"));
+	// $(".end-date").val(end.format("YYYY/MM/DD"));
 
 	// モーダルを開く
 	$(document).on("click", ".pj-new-button", function(){
@@ -1230,8 +1230,13 @@ jQuery(function($){
 		$("#pj-edit-modal").addClass("modal_open");
   });
 
-  // モーダルを閉じる
+  // モーダルを閉じる 削除ボタン
 	$(document).on("click", ".dislog_close", function(){
+		$("#pj-edit-modal").removeClass("modal_open");
+  });
+
+  // モーダルを閉じる キャンセルボタン
+	$(document).on("click", ".dislog_cancel", function(){
 		$("#pj-edit-modal").removeClass("modal_open");
 	});
 
