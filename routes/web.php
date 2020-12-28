@@ -25,5 +25,4 @@ Route::post('/matter/date', 'MatterController@date');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/home', 'HomeController@date');
+// Route::get('/home', 'HomeController@index')->name('home');

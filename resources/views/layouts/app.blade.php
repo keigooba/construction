@@ -33,15 +33,15 @@
   <!-- jQuery -->
   <script src="{{ asset('js/jquery.min.js') }}"></script>
 	<!-- jQuery UI: 日付ピッカー等 -->
-  <script src="{{ asset('js/jquery-ui/jquery-ui.min.js') }}"></script>
+  <!-- <script src="{{ asset('js/jquery-ui/jquery-ui.min.js') }}"></script> -->
 	<!-- jQuery UI: 日付ピッカー等(日本語化) -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/i18n/jquery-ui-i18n.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/i18n/jquery-ui-i18n.min.js"></script> -->
 	<!-- Spectrum: カラーピッカー -->
-  <script src="{{ asset('js/spectrum/spectrum.min.js') }}"></script>
+  <!-- <script src="{{ asset('js/spectrum/spectrum.min.js') }}"></script> -->
 	<!-- jQuery UI Touch Punch: スマートフォン用のタッチイベント→マウスイベント調整 -->
-  <script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script>
+  <!-- <script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script> -->
 	<!-- jQuery.hotkeys: キーボードショートカット -->
-  <script src="{{ asset('js/jquery.hotkeys.js') }}"></script>
+  <!-- <script src="{{ asset('js/jquery.hotkeys.js') }}"></script> -->
 	<!-- Bootstrap: ツールチップ等 -->
   <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 	<!-- DataTables: 管理用テーブル -->
@@ -61,9 +61,9 @@
   <script src="{{ asset('js/elFinder/elfinder.min.js') }}"></script>
 
   <!-- ユーザー設定 -->
-	<script>
+	<!-- <script>
 	common.userOption.data = {"staff_name_1":"\u55b6\u696d","staff_name_2":"\u8a2d\u8a08","staff_name_3":"\u5de5\u4e8b","staff_name_4":"\u696d\u8005","max_date_month":"12","max_main_work":"20"};
-  </script>
+  </script> -->
 
   <!-- /共通スタイル -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -71,7 +71,7 @@
   <!-- /追加・上書きスタイル -->
   <link rel="stylesheet" href="{{ asset('css/sp.css') }}">
   <!-- 共通スクリプト -->
-  <script src="{{ asset('js/dialog.js') }}"></script>
+  <!-- <script src="{{ asset('js/dialog.js') }}"></script> -->
   <script src="{{ asset('js/script.js') }}"></script>
 
 </head>

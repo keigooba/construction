@@ -5,12 +5,6 @@
 .input-group-addon {
   padding: 2px 12px !important;
 }
-/* 削除ボタン */
-.dislog_close {
-  position: absolute;
-  right: 2%;
-  top: 5px;
-}
 /* カラーピッカー */
 .preview_picker {
   display: none;
@@ -33,4 +27,17 @@
 /* ボタン・入金表示 高さ */
 .height_adjust {
   margin-bottom: 13px;
+}
+input[name="date"] {
+  width: 100%;
+}
+/* ダイアログの表示 */
+.dialog_panel-body {
+  position: inherit;
+}
+/* ダイアログ 削除ボタン */
+.dislog_close {
+  position: absolute;
+  right: 2%;
+  top: 5px;
 }
